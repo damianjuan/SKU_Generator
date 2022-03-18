@@ -13,6 +13,10 @@ const App = () => {
     setSkuList(newSku);
   }
 
+  const checkForExsistingSku = () => {
+
+  };
+
   generateNewSku();
   console.log(skuList);
   return (
