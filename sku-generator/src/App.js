@@ -14,7 +14,7 @@ const App = () => {
   }
 
   const checkForExsistingSku = () => {
-
+    //chech generated sku against yhose stored in state if in state already generate another sku
   };
 
   generateNewSku();
