@@ -10,7 +10,7 @@ const App = () => {
     const lengthOfSku = 9999;
     const newSku = Math.floor(Math.random() * lengthOfSku);
     //console.log(newSku);
-    setSkuList(newSku);
+    setSkuList([...skuList, newSku]);
   }
 
   const checkForExsistingSku = () => {
