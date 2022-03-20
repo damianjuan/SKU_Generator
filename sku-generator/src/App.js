@@ -9,7 +9,7 @@ const App = () => {
   const generateNewSku = () => {
     const lengthOfSku = 9999;
     const newSku = Math.floor(Math.random() * lengthOfSku);
-    console.log(newSku);
+    //console.log(newSku);
     setSkuList(newSku);
   }
 
