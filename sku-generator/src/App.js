@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 
 const App = () => {
@@ -14,13 +14,19 @@ const App = () => {
   }
 
   const checkForExsistingSku = () => {
-    //chech generated sku against yhose stored in state if in state already generate another sku
+    //chech generated sku against those stored in state if in state already generate another sku
   };
 
-  generateNewSku();
+  //only run function once on page load
+  useEffect(() => {
+    generateNewSku();
+  }, []);
+
+
   console.log(skuList);
   return (
     <div className="App">
+      <button onClick={generateNewSku}>generate new sku</button>
     </div>
   );
 }
