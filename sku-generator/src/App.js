@@ -14,7 +14,7 @@ const App = () => {
   }
 
   const checkForExsistingSku = () => {
-    //chech generated sku against those stored in state if in state already generate another sku
+    //check generated sku against those stored in state if in state already generate another sku
   };
 
   //only run function once on page load
