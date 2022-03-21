@@ -18,9 +18,10 @@ const App = () => {
   };
 
   //only run function once on page load
-  useEffect(() => {
-    generateNewSku();
-  }, []);
+  //dont need to run on page load anymore
+  //useEffect(() => {
+  //   generateNewSku();
+  //  }, []);
 
 
   console.log(skuList);
