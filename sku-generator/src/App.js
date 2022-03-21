@@ -10,8 +10,10 @@ const App = () => {
 
   //generate sku based on desired length and save to state. will change to take input for length of sku desired
   const generateNewSku = () => {
+    console.log('generateNewSku running')
     lengthOfSku = 9999;
     newSku = Math.floor(Math.random() * lengthOfSku);
+    checkForExsistingSku();
     //console.log(newSku);
     // moving to checkForExsistingSku temporarily 
     // setSkuList([...skuList, newSku]);
@@ -19,7 +21,8 @@ const App = () => {
 
   //check generated sku against those stored in state if in state already generate another sku
   const checkForExsistingSku = () => {
-    skuList.includes(newSku) ? setSkuList([...skuList, newSku]) : generateNewSku();
+    console.log("generateNewSku function running");
+    skuList.includes(newSku) ? generateNewSku() : setSkuList([...skuList, newSku]);
   };
 
   //only run function once on page load
