@@ -40,8 +40,6 @@ const App = () => {
       {skuList.map((sku) => (
         <h3>{sku}</h3>
       ))}
-
-      )
     </div>
   );
 }
