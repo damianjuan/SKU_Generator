@@ -36,6 +36,7 @@ const App = () => {
   return (
     <div className="App">
       <button onClick={generateNewSku}>generate new sku</button>
+      <h1>New SKU: {newSku}</h1>
       <h2>SKUs:</h2>
       {skuList.map((sku) => (
         <h3>{sku}</h3>
