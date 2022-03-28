@@ -36,10 +36,10 @@ const App = () => {
   console.log(skuList);
   return (
     <div className="App">
-      <button onClick={generateNewSku}>generate new sku</button>
+      {/* <button onClick={generateNewSku}>generate new sku</button> */}
+      {/* <button>show my saved SKUs</button> */}
+      <Button variant="contained" onClick={generateNewSku}>New SKU</Button>
       <h1>New SKU: {newSku}</h1>
-      <button>show my saved SKUs</button>
-      <Button variant="text">Text</Button>
       <h2>SKUs:</h2>
       {skuList.map((sku) => (
         <h3>{sku}</h3>
