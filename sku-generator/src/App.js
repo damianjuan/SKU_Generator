@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Button } from 'material-ui';
+import { Button } from '@mui/material/Button';
 import './App.css';
 
 const App = () => {
@@ -39,7 +39,7 @@ const App = () => {
       <button onClick={generateNewSku}>generate new sku</button>
       <h1>New SKU: {newSku}</h1>
       <button>show my saved SKUs</button>
-      <Button>Test</Button>
+      <Button variant="text">Text</Button>
       <h2>SKUs:</h2>
       {skuList.map((sku) => (
         <h3>{sku}</h3>
