@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Button, Paper, Box } from '@mui/material';
+import { Button, Paper, Box, Container } from '@mui/material';
 //import './App.css';
 
 const App = () => {
@@ -36,12 +36,7 @@ const App = () => {
   console.log(skuList);
   return (
 
-    <Box
-      sx={{
-        display: 'flex',
-        flexWrap: 'wrap',
-      }}
-    >
+    <Container>
       <Paper elevation={4}>
         {/* <button>show my saved SKUs</button> */}
         <Button variant="contained" onClick={generateNewSku}>New SKU</Button>
@@ -51,7 +46,8 @@ const App = () => {
           <h3>{sku}</h3>
         ))}
       </Paper>
-    </Box>
+    </Container>
+
 
 
   );
