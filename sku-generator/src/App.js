@@ -36,7 +36,6 @@ const App = () => {
   console.log(skuList);
   return (
     <div className="App">
-      {/* <button onClick={generateNewSku}>generate new sku</button> */}
       {/* <button>show my saved SKUs</button> */}
       <Button variant="contained" onClick={generateNewSku}>New SKU</Button>
       <h1>New SKU: {newSku}</h1>
