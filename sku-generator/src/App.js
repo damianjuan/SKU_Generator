@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Button } from '@mui/material';
+import { Button, Paper } from '@mui/material';
 //import './App.css';
 
 const App = () => {
@@ -36,13 +36,15 @@ const App = () => {
   console.log(skuList);
   return (
     <div className="App">
-      {/* <button>show my saved SKUs</button> */}
-      <Button variant="contained" onClick={generateNewSku}>New SKU</Button>
-      <h1>New SKU: {newSku}</h1>
-      <h2>SKUs:</h2>
-      {skuList.map((sku) => (
-        <h3>{sku}</h3>
-      ))}
+      <Paper elevation={4}>
+        {/* <button>show my saved SKUs</button> */}
+        <Button variant="contained" onClick={generateNewSku}>New SKU</Button>
+        <h1>New SKU: {newSku}</h1>
+        <h2>SKUs:</h2>
+        {skuList.map((sku) => (
+          <h3>{sku}</h3>
+        ))}
+      </Paper>
     </div>
   );
 }
