@@ -27,7 +27,7 @@ const App = () => {
   };
 
   //move formula here for saved skus. only show when requested
-  const showSavedSkus = () => {
+  const showSavedSku = () => {
     console.log(`showSavedSkus function called`);
     <h2>SKUs:</h2>
     {
@@ -50,7 +50,7 @@ const App = () => {
 
     <Container>
       <Paper elevation={4}>
-        <Button variant="contained" onClick={showSavedSkus}>show my saved SKUs</Button>
+        <Button variant="contained" onClick={showSavedSku}>show my saved SKUs</Button>
         <Button variant="contained" onClick={generateNewSku}>New SKU</Button>
         <h1>New SKU: {newSku}</h1>
         {/* <h2>SKUs:</h2>
