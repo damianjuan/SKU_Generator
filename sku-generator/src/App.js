@@ -38,7 +38,7 @@ const App = () => {
 
     <Container>
       <Paper elevation={4}>
-        {/* <button>show my saved SKUs</button> */}
+        <Button>show my saved SKUs</Button>
         <Button variant="contained" onClick={generateNewSku}>New SKU</Button>
         <h1>New SKU: {newSku}</h1>
         <h2>SKUs:</h2>
