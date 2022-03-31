@@ -28,7 +28,7 @@ const App = () => {
 
   //move formula here for saved skus. only show when requested
   const showSavedSkus = () => {
-    console.log(`showSavedSkus function calledgit `)
+    console.log(`showSavedSkus function called`)
   }
 
 
@@ -47,9 +47,9 @@ const App = () => {
         <Button>show my saved SKUs</Button>
         <Button variant="contained" onClick={generateNewSku}>New SKU</Button>
         <h1>New SKU: {newSku}</h1>
-        <h2>SKUs:</h2>
+        {/* <h2>SKUs:</h2>
         {skuList.map((sku) => (
-          <h3>{sku}</h3>
+          <h3>{sku}</h3> */}
         ))}
       </Paper>
     </Container>
