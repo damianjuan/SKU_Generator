@@ -28,8 +28,9 @@ const App = () => {
 
   //move formula here for saved skus. only show when requested
   const showSavedSkus = () => {
-    console.log(`showSavedSkus function called`)
-  }
+    console.log(`showSavedSkus function called`);
+
+  };
 
 
   //only run function once on page load
@@ -49,8 +50,8 @@ const App = () => {
         <h1>New SKU: {newSku}</h1>
         {/* <h2>SKUs:</h2>
         {skuList.map((sku) => (
-          <h3>{sku}</h3> */}
-        ))}
+          <h3>{sku}</h3>
+        ))} */}
       </Paper>
     </Container>
 
