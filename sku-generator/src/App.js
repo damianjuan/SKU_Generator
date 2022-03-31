@@ -26,6 +26,12 @@ const App = () => {
     skuList.includes(newSku) ? generateNewSku() : setSkuList([...skuList, newSku]);
   };
 
+  //move formula here for saved skus. only show when requested
+  const showSavedSkus = () => {
+    console.log(`showSavedSkus function calledgit `)
+  }
+
+
   //only run function once on page load
   //dont need to run on page load anymore
   //useEffect(() => {
