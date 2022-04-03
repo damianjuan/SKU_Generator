@@ -29,12 +29,14 @@ const App = () => {
   //move formula here for saved skus. only show when requested
   const showSavedSku = () => {
     console.log(`showSavedSkus function called`);
-    // <h2>SKUs:</h2>
-    // {
-    //   skuList.map((sku) => (
-    //     <h3>{sku}</h3>
-    //   ))
-    // }
+    return
+
+    <h2>SKUs:</h2>
+    {
+      skuList.map((sku) => (
+        <h3>{sku}</h3>
+      ))
+    }
   };
 
 
